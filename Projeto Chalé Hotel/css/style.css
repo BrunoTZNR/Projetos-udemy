@@ -28,6 +28,7 @@ img{
 body{
     font-family: Helvetica, "Trebuchet MS", sans-serif;
     margin: 15px;
+    background: url(../img/bg.png);
 }
 
 /* header */
@@ -36,7 +37,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 1180px;
+    max-width: 1180px;
     height: 250px;
     background: url(../img/topo-imagem-principal.png) no-repeat;
 }
@@ -78,5 +79,35 @@ body{
 
 .menu-container{
     display: flex;
+    width: 345px;
+    justify-content: space-between;
     flex-direction: row;
+}
+
+.menu-container nav ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    height: 150px;
+}
+
+.menu-container ul li a{
+    padding: 5px;
+    color: #6e672c;
+    font-size: 0.8em;
+}
+
+.menu-container ul li a:hover{
+    background: var(--yellow);
+}
+
+/*main*/
+
+.main-container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.container1{
+    width: 50%;
 }
