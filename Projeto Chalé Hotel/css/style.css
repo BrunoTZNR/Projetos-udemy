@@ -17,7 +17,6 @@ li{
 
 a{
     text-decoration: none;
-    color: #fff;
 }
 
 img{
@@ -74,6 +73,7 @@ body{
     text-transform: uppercase;
     margin: 5px 0;
     padding: 5px 10px;
+    color: #f3efcb;
     background-color: #a29750;
 }
 
@@ -81,23 +81,22 @@ body{
     display: flex;
     width: 345px;
     justify-content: space-between;
-    flex-direction: row;
+    align-items: center;
 }
 
-.menu-container nav ul{
+.menu-container ul{
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
-    height: 150px;
+    row-gap: 16px;
 }
 
-.menu-container ul li a{
+.menu-container a{
     padding: 5px;
     color: #6e672c;
     font-size: 0.8em;
 }
 
-.menu-container ul li a:hover{
+.menu-container a:hover{
     background: var(--yellow);
 }
 
@@ -106,8 +105,86 @@ body{
 .main-container{
     max-width: 1180px;
     margin: 0 auto;
+    display: flex;
+}
+
+.container1, .container2{
+    width: 50%;
 }
 
 .container1{
-    width: 50%;
+    background: #ede9cc url(../img/bg-area-principal.png) repeat-x;
+    padding: 15px 0;
+}
+
+.content-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.container1 h2{
+    font-size: 1.1em;
+    color: #7d7640;
+    padding: 5px 0;
+}
+
+.container2{
+    background: #D9D7B6 url(../img/bg-area-lateral.png) repeat-x;
+    padding: 15px 0;
+}
+
+.container2 nav{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container2 ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 li{
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+}
+
+.container2 a{
+    display: flex;
+}
+
+.container2 img{
+    width: 150px;
+}
+
+.container2 article{
+    margin-left: 8px;
+}
+
+.container2 h3{
+    color: #615b2d;
+    font-size: 1em;
+    padding: 5px 0;
+    background: url(../img/ornamento.png) no-repeat center right;
+}
+
+.container2 p{
+    color: #000;
+    font-size: 0.8em;
+}
+
+/* footer */
+.baixo{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 16px;
+    color: #7d7640;
+    background: #fff url(../img/bg-rodape.png) repeat-x;
 }
