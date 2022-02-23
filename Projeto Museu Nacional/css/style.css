@@ -1,0 +1,117 @@
+:root{
+    --color1: #af670a;
+    --color1-strong: #86521a;
+    --color-green: #227115;
+    --color4: #cdc8b1;
+    --color4-strong: #ebe7dd;
+    --input-color: #ada484;
+    --input-color-strong: #9b9271;
+    --border-color: #535858;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h3, h4{
+    text-transform: uppercase;
+}
+
+body{
+    background: #f4f2ec url(../img/fundo.png) repeat-x;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header{
+    padding: 20px 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a{
+    color: var(--color1);
+}
+
+.logo span{
+    color: #fff;
+}
+
+.logo a{
+    font-size: 2em;
+}
+
+.menu ul{
+    display: flex;
+    column-gap: 20px;
+}
+
+.menu a{
+    font-size: 0.85em;
+}
+
+.menu a:hover, #here{
+    color: var(--color-green);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* main */
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    width: 710px;
+    background-color: #53585849;
+}
+
+.postagens{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1em;
+    justify-content: space-between;
+    row-gap: 1em;
+    margin: 1em 0;
+}
+
+.content-container{
+    background-color: #21711591;
+    display: block;
+    width: 330px;
+    height: 250px;
+}
+
+.content-container h3{
+    font-size: .9em;
+    /* margin-bottom: .5em; */
+}
+
+/* aside */
+
+.aside-container{
+    width: 350px;
+    background-color: #57444449;
+}
