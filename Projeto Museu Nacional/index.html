@@ -36,19 +36,19 @@
                 <article class="video content-container">
                     <h3>vídeo: conheça o museu</h3>
 
-                    <iframe width="330" height="185" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <iframe width="320" height="185" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </article>
 
                 <article class="mapa content-container">
                     <h3>mapa: encontre o museu</h3>
                     
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1537538326477" width="330" height="210" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu+Nacional+-+UFRJ!5e0!3m2!1spt-BR!2sbr!4v1537538326477" width="320" height="185" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </article>
 
-                <article class="exposicoes content-container">
+                <article class="content-container">
                     <h3>exposições</h3>
 
-                    <ul>
+                    <ul class="exposicoes">
                         <li><a href="#1">Os assustadores insetos</a></li>
                         <li><a href="#2">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
                         <li><a href="#3">Preguiça gigante e tigre-dentes-de-sabre</a></li>
@@ -57,8 +57,7 @@
                         <li><a href="#6">Arte com dinossauros - Paleoarte</a></li>
                     </ul>
 
-                    <a href="#more-exposicoes">Veja todos (65)</a>
-                    
+                    <a class="right" href="#more-exposicoes">Veja todos (65)</a>
                 </article>
 
                 <article class="historia content-container">
@@ -66,7 +65,7 @@
                     
                     <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as praias de Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.</p>
 
-                    <a href="#more-historia">Leia mais</a>
+                    <a class="right" href="#more-historia">Leia mais</a>
                 </article>
             </section>
         </section>
@@ -76,37 +75,40 @@
                 <img src="./img/depoimento.png" alt="Recado da direção">
             </figure>
 
-            <form class="visita">
-                <h4>faça uma visita</h4>
-
-                <label for="data">Data</label>
-                <input type="date" name="data" id="data">
-
-                <label for="qp">Qtd pessoas</label>
-                <input type="number" name="qp" id="qp">
-
-                <input type="button" value="Verificar disponibilidade">
-            </form>
-
-            <section class="galeria">
-                <h4>galeria de fotos</h4>
-
-                <a href="#img1">
-                    <img src="./img/imagem1.jpg" alt="imagem 1">
-                </a>
-
-                <a href="#img2">
-                    <img src="./img/imagem2.jpg" alt="imagem 2">
-                </a>
-
-                <a href="#img3">
-                    <img src="./img/imagem3.jpg" alt="imagem 3">
-                </a>
-
-                <a href="#img4">
-                    <img src="./img/imagem4.jpg" alt="imagem 4">
-                </a>
-            </section>
+            <div class="bottom-container">
+                <form class="visita">
+                    <h4>faça uma visita</h4>
+                    
+                    <div class="inputs">
+                        <label for="data">Data</label>
+                        <input type="date" name="data" id="data" value="dd/mm/aaaa">
+                    
+                        <label for="qp">Qtd pessoas</label>
+                        <input type="number" name="qp" id="qp" min="1" value="1">
+                    </div>
+                    <input type="submit" value="Verificar disponibilidade">
+                </form>
+    
+                <section class="galeria">
+                    <h4>galeria de fotos</h4>
+    
+                    <a href="#img1">
+                        <img src="./img/imagem1.jpg" alt="imagem 1">
+                    </a>
+    
+                    <a href="#img2">
+                        <img src="./img/imagem2.jpg" alt="imagem 2">
+                    </a>
+    
+                    <a href="#img3">
+                        <img src="./img/imagem3.jpg" alt="imagem 3">
+                    </a>
+    
+                    <a href="#img4">
+                        <img src="./img/imagem4.jpg" alt="imagem 4">
+                    </a>
+                </section>
+            </div>
         </aside>
     </main>
 

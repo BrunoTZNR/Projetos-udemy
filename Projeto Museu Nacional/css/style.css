@@ -4,7 +4,7 @@
     --color-green: #227115;
     --color4: #cdc8b1;
     --color4-strong: #ebe7dd;
-    --input-color: #ada484;
+    --input-color: #c5ba92;
     --input-color-strong: #9b9271;
     --border-color: #535858;
 }
@@ -85,7 +85,6 @@ main{
 
 .main-container{
     width: 710px;
-    background-color: #53585849;
 }
 
 .postagens{
@@ -98,20 +97,111 @@ main{
 }
 
 .content-container{
-    background-color: #21711591;
-    display: block;
+    background-color: #e7e6e6;
+    padding: 5px;
     width: 330px;
     height: 250px;
 }
 
 .content-container h3{
+    margin-bottom: 0.6em;
     font-size: .9em;
-    /* margin-bottom: .5em; */
+    color: var(--color-green);
+}
+
+.exposicoes li{
+    list-style: inherit;
+    list-style-position: inside;
+}
+
+.exposicoes a{
+    font-size: 0.85em;
+    color: var(--color1);
+    margin-left: -0.8em;
+}
+
+.exposicoes a:hover, .right:hover{
+    color: var(--color1-strong);
+}
+
+.historia p{
+    font-size: 0.9em;
+    color: var(--border-color);
+}
+
+.right{
+    font-size: 0.85em;
+    color: var(--color1);
+    font-weight: bold;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0.6em 0;
 }
 
 /* aside */
 
 .aside-container{
     width: 350px;
-    background-color: #57444449;
+}
+
+.visita{
+    display: flex;
+    flex-direction: column;
+    background-color: #cdc8b1;
+    padding: 1.2em 1em;
+    margin: 1em 0;
+}
+
+.inputs{
+    display: flex;
+    column-gap: 10px;
+    margin: .6em auto;
+}
+
+.visita h4{
+    font-size: .8em;
+    color: var(--color1-strong);
+}
+
+.visita label{
+    font-size: .8em;
+}
+
+.visita input[type="date"], input[type="number"]{
+    border: 1px solid var(--input-color-strong);
+    outline: none;
+}
+
+.visita input[type="date"]{
+    width: 90px;
+    height: 20px;
+    padding: 0.2em;
+}
+
+::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
+.visita input[type="number"]{
+    width: 45px;
+    height: 20px;
+    padding: 0.2em;
+}
+
+.visita input[type="submit"]{
+    cursor: pointer;
+    width: 100%;
+    font-size: .9em;
+    outline: none;
+    border: 0;
+    padding: .7em 1em;
+    color: #fff;
+    background-color: var(--input-color-strong);
+}
+
+/* footer */
+
+footer{
+    height: 200px;
 }
