@@ -18,6 +18,7 @@
 
 a{
     text-decoration: none;
+    color: var(--color1);
 }
 
 li{
@@ -48,10 +49,6 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header a{
-    color: var(--color1);
 }
 
 .logo span{
@@ -116,7 +113,6 @@ main{
 
 .exposicoes a{
     font-size: 0.85em;
-    color: var(--color1);
     margin-left: -0.8em;
 }
 
@@ -143,6 +139,12 @@ main{
 
 .aside-container{
     width: 350px;
+}
+
+.bottom-container{
+    display: flex;
+    row-gap: 1.5em;
+    flex-direction: column;
 }
 
 .visita{
@@ -231,6 +233,25 @@ main{
 
 /* footer */
 
-footer{
-    height: 200px;
+.footer-container{
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+    margin-top: 1.5em;
+    padding: 1.5em 0;
+    background: url(../img/fundo-rodape.png) no-repeat top;
+}
+
+.footer-menu ul{
+    display: flex;
+    column-gap: 20px;
+}
+
+.footer-menu a, .footer-baixo p{
+    font-size: 0.8em;
+}
+
+.footer-menu a:hover, .footer-baixo a:hover{
+    color: var(--color-green);
 }
