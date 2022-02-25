@@ -97,7 +97,7 @@ main{
 }
 
 .content-container{
-    background-color: #e7e6e6;
+    background-color: #f3f3f3;
     padding: 5px;
     width: 330px;
     height: 250px;
@@ -150,7 +150,7 @@ main{
     flex-direction: column;
     background-color: #cdc8b1;
     padding: 1.2em 1em;
-    margin: 1em 0;
+    margin-top: 1em;
 }
 
 .inputs{
@@ -198,6 +198,35 @@ main{
     padding: .7em 1em;
     color: #fff;
     background-color: var(--input-color-strong);
+}
+
+.galeria{
+    background-color: #ebe7dd;
+    padding: 1.2em 1em;
+}
+
+.galeria h4{
+    color: var(--color1-strong);
+    font-size: .8em;
+    padding-bottom: 1.4em;
+}
+
+.galeria-fotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.galeria-fotos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 135px;
+    width: 135px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    background: url(../img/fundo-foto.png) no-repeat;
 }
 
 /* footer */
