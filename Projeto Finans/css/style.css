@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+:root{
+    --bg-yellow: #ffc107;
+    --color-a-nav-menu: rgba(0,0,0,.5);
+    --color-a-nav-menu-strong: rgba(0, 0, 0, 0.767);
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid #ff0000; */
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+/*header*/
+
+.header-container{
+    background-color: var(--bg-yellow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8em 4.7em;
+}
+
+/* menu nav */
+
+.menu{
+    display: flex;
+    column-gap: 1.8em;
+    align-items: center;
+}
+
+.menu-header ul{
+    display: flex;
+    column-gap: .9em;
+}
+
+.menu-header a{
+    font-size: .95em;
+    display: block;
+    color: var(--color-a-nav-menu);
+    transition: .15s;
+}
+
+.menu-header a:hover{
+    color: #000;
+}
+
+/* botao header */
+
+.singin{
+    background: transparent;
+    font-size: .9em;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: .75em 1em;
+    color: #fff;
+    transition: .2s;
+}
+
+.singin:hover{
+    color: #000;
+    background: #fff;
+}
+
+/*main*/
+
+main header{
+    background-color: var(--bg-yellow);
+    display: flex;
+    justify-content: center;
+}
+
+/*esquerda*/
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: center;
+    width: 550px;
+}
+
+/*textin*/
+
+.textin h1{
+    font-size: 3.5em;
+    font-family: var(--font-poppins);
+    line-height: 1.1em;
+    margin-bottom: .3em;
+}
+
+.textin p{
+    line-height: 1.18em;
+}
+
+/*inscrever*/
+
+.inscrever{
+    margin: 1.4em 0;
+    display: flex;
+}
+
+.inscrever input[type="email"], .inscrever input[type="submit"]{
+    height: 47px;
+    border: 0;
+    outline: none;
+    padding: .5em .8em;
+    transition: .15s;
+}
+
+.inscrever input[type="email"]{
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+}
+
+.inscrever input[type="email"]::placeholder, .inscrever input[type="email"], .inscrever input[type="submit"]{
+    font-size: 1.1em;
+    font-family: var(--font-poppins);
+    font-weight: bold;
+}
+
+.inscrever input[type="submit"]{
+    background-color: var(--color-a-nav-menu);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.inscrever input[type="submit"]:hover{
+    background-color: var(--color-a-nav-menu-strong);
+}
+
+
+/*direita*/
+
+.direita{
+    margin-left: 1em;
+}
+
+/*disponivel*/
+.icons{
+    display: inline-block;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: .5em .7em;
+    transition: .15s;
+}
+
+.icons:hover{
+    background-color: #fff;
+    color: #000;
+}
