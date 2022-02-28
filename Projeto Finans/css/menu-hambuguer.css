@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
 #checkbox-menu{
     position: absolute;
     opacity: 0;
@@ -48,7 +50,51 @@ label span:nth-child(3){
 }
 
 @media only screen and (min-width: 768px){
-    .container-responsivo{
+    section.container-responsivo{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    /* menu hamburguer */
+    nav.menu-mobile ul{
+        background-color: #ffc107;
+        position: fixed;
+        display: block;
+        width: 100%;
+        top: 62.06px;
+        right: -100%;
+        padding: .8rem 0;
+    }
+
+    nav.menu-mobile ul li{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav.menu-mobile ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    nav.menu-mobile ul li a{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding: .3rem 0;
+    }
+
+    nav.menu-mobile ul li a:hover{
+        background-color: #f7bb07;
+    }
+
+    nav.menu-mobile ul li a.singin{
+        border: 0;
+        font-size: 1.3rem;
+    }
+
+    #checkbox-menu:checked ~ ul{
+        right: 0;
     }
 }

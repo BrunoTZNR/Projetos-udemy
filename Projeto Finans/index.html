@@ -24,7 +24,15 @@
             </section>
             
             <!-- navegação de links -->
-            <nav class="menu-header">
+            <nav class="menu-header menu-mobile">
+                <!-- menu mobile <768px -->
+                <input type="checkbox" id="checkbox-menu">
+                <label for="checkbox-menu" class="checkbtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <!-- menu >768px -->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#recursos">Recursos</a></li>
@@ -33,10 +41,10 @@
                     <li><a class="singin" href="#singin">Entrar</a></li>
                 </ul>
             </nav>
-<!--
-             menu hamburguer 
+
+            <!-- menu hamburguer 
             <section class="container-responsivo">
-                <input type="checkbox" id="checkbox-menu" name="checkbox">
+                <input type="checkbox" id="checkbox-menu">
 
                 <label for="checkbox-menu">
                     <span></span>

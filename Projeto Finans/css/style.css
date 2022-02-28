@@ -2,8 +2,8 @@
 
 :root{
     --bg-yellow: #ffc107;
-    --color-a-nav-menu: rgba(0,0,0,.5);
-    --color-a-nav-menu-strong: rgba(0, 0, 0, 0.767);
+    --color-a-nav-menu: #00000080;
+    --color-a-nav-menu-strong: #000000c4;
     --font-poppins: 'Poppins', sans-serif;
 }
 
@@ -68,6 +68,10 @@ nav.menu-header a:hover{
     color: #000;
 }
 
+nav.menu-mobile label.checkbtn{
+    display: none;
+}
+
 /* entrar */
 
 nav.menu-header ul li a.singin{
@@ -84,6 +88,52 @@ nav.menu-header ul li a.singin{
 nav.menu-header ul li a.singin:hover{
     color: #000;
     background: #fff;
+}
+
+/* menu mobile */
+
+#checkbox-menu{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: .25s ease-in-out;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
 }
 
 /* main */
@@ -288,6 +338,7 @@ div.footer-container{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 auto;
 }
 
 /* menu footer */
@@ -330,8 +381,7 @@ section.redes a.footer-icon:hover, section.ancoraTopo a:hover{
     /* reset */
     figure.direita img,
     section.sobre img,
-    div.footer-main-container img,
-    nav.menu-header{
+    div.footer-main-container img{
         display: none;
     }
 
@@ -400,6 +450,56 @@ section.redes a.footer-icon:hover, section.ancoraTopo a:hover{
     }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    /* menu hamburguer */
+    nav.menu-header label.checkbtn{
+        display: block;
+    }
+
+    nav.menu-header ul{
+        background-color: #ffc107;
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: auto;
+        top: 62.06px;
+        right: -100%;
+        padding: .8rem 0;
+        transition: all .4s;
+    }
+
+    nav.menu-header ul li{
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    nav.menu-header ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    nav.menu-header ul li a{
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding: .3rem 0;
+    }
+
+    nav.menu-header ul li a:hover{
+        background-color: #f7bb07;
+    }
+
+    nav.menu-header ul li a.singin{
+        border: 0;
+        font-size: 1.3rem;
+    }
+
+    #checkbox-menu:checked ~ ul{
+        right: 0;
+    }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1019px){
     /* header */
     nav.menu-header{
@@ -441,8 +541,6 @@ section.redes a.footer-icon:hover, section.ancoraTopo a:hover{
         padding: 2rem 0;
     }
 }
-
-
 
 @media only screen and (min-width: 1020px) and (max-width: 1097px){
     /* main header */
