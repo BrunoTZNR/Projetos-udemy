@@ -1,0 +1,92 @@
+:root{
+    --purple: #7c25f8;
+    --cian: #9bf0e1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body, html{
+    font-family: 'arial', sans-serif;
+    overflow-x: hidden;
+    background: url(../img/capa.png), url(../img/ruido.png), linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+}
+
+/* header */
+
+header.header{
+    position: fixed;
+    width: 100%;
+    background-color: #0000009e;
+}
+
+header section.header-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.header-menu ul{
+    display: flex;
+    align-items: center;
+    column-gap: .4rem;
+}
+
+nav.header-menu ul span{
+    color: #fff;
+    padding: 0 .3rem;
+}
+
+nav.header-menu ul li a{
+    color: #fff;
+    display: block;
+    padding: .2rem .5rem;
+}
+
+nav.header-menu ul li a:hover{
+    color: var(--cian);
+}
+
+/* main */
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+main section.main-container header{
+    height: 100vh;
+    background: none;
+    display: flex;
+    align-items: center;
+}
+
+section.carrosel{
+    display: flex;
+}
+
+article.carrosel-content h1{
+    font-size: 6rem;
+    font-weight: 900;
+}
