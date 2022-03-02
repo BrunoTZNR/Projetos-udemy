@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 a{
@@ -21,6 +21,7 @@ li{
 img{
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
 body, html{
@@ -36,6 +37,7 @@ header.header{
     position: fixed;
     width: 100%;
     background-color: #0000009e;
+    z-index: 5;
 }
 
 header section.header-container{
@@ -55,7 +57,7 @@ nav.header-menu ul{
 
 nav.header-menu ul span{
     color: #fff;
-    padding: 0 .3rem;
+    padding: .2rem .3rem;
 }
 
 nav.header-menu ul li a{
@@ -70,12 +72,9 @@ nav.header-menu ul li a:hover{
 
 /* main */
 
-main{
+main section.main-container header{
     max-width: 1140px;
     margin: 0 auto;
-}
-
-main section.main-container header{
     height: 100vh;
     background: none;
     display: flex;
@@ -89,4 +88,86 @@ section.carrosel{
 article.carrosel-content h1{
     font-size: 6rem;
     font-weight: 900;
+}
+
+/* sobre spotify */
+
+section.about-spotify-container{
+    background-color: #fff;
+}
+
+section.about-spotify, section.easy-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem 0;
+}
+
+section.about-spotify figure.imagens{
+    max-width: 532px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 2rem;
+}
+
+section.about-spotify article.about-content{
+    padding: 0 2rem;
+}
+
+article.about-content h2, article.about-content h3{
+    color: var(--purple);
+    margin-bottom: .8rem;
+}
+
+article.about-content h2{
+    font-size: 3rem;
+}
+
+article.about-content h3{
+    font-size: 2rem;
+}
+
+article.about-content p{
+    line-height: 1.35rem;
+    margin-bottom: .8rem;
+}
+
+/* easy */
+
+section.main-container section.easy-container{
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+section.easy-container article.about-content{
+    max-width: 350px;
+    padding: 0;
+}
+
+article.second-color h2, article.second-color p{
+    color: #fff;
+}
+
+article.second-color h3{
+    color: var(--cian);
+}
+
+figure.celulares{
+    display: flex;
+    column-gap: 2rem;
+    margin-left: 7rem;
+    transform: rotate(30deg);
+}
+
+figure.celulares img{
+    width: 300px;
+}
+
+/* footer */
+
+footer{
+    background-color: #000;
+    padding: 2rem 0 1.5rem;
+    position: relative;
 }
