@@ -93,17 +93,20 @@ main section.main-container section.carrosel a i{
 section.carrosel div.carrosel-content{
     display: flex;
     overflow-x: hidden;
+    position: relative;
 }
 
 section.carrosel div.carrosel-content div.article-container{
     display: block;
-    width: 100%;
+    /* position: absolute; */
+    /* width: 700px; */
 }
 
 section.carrosel div.carrosel-content article{
     display: flex;
     flex-direction: column;
-    position: relative;
+    width: ;
+    /* position: relative; */
     left: 0; /*-1118px*/
     background-color: green;
 }
